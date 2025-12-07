@@ -1,7 +1,7 @@
 package LS02_AB09_Umsatzanalyse;
 
 import java.util.Scanner;
-
+//hallo
 public class Umsatzanalyse {
     private double umsatzZerlose;
     private double kosten;
