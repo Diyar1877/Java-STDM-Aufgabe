@@ -1,4 +1,4 @@
-package LS02_AB09_Umsatzanalyse;
+package LS02_AB010_Umsatzanalyse;
 
 import java.util.Scanner;
 //hallo
