@@ -57,14 +57,6 @@ public class TransportPauschale {
     }
 
     public static void main(String[] args) {
-<<<<<<< HEAD
-        System.out.println("hallo");
-        System.out.println("was geht");
-        System.out.println("testttt");
-        System.out.println("haloooooooooo");
-
-        System.out.println("test branch");
-=======
         Scanner scanner = new Scanner(System.in);
         System.out.print("Geben Sie Warenwert ein: ");
         double ww = scanner.nextDouble();
@@ -79,6 +71,5 @@ public class TransportPauschale {
         TransportPauschale eins = new TransportPauschale(ww,en,lt);
         eins.rechnen();
         eins.ausgabe();
->>>>>>> b9b4ff19630b3e3e5894dd32255fb1beac8469d4
     }
 }
