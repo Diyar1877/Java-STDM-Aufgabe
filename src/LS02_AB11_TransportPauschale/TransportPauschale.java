@@ -71,11 +71,5 @@ public class TransportPauschale {
         TransportPauschale eins = new TransportPauschale(ww,en,lt);
         eins.rechnen();
         eins.ausgabe();
-        System.out.println("hallo");
-        System.out.println("was geht");
-        System.out.println("testttt");
-        System.out.println("haloooooooooo");
-
-        System.out.println("test branch");
     }
 }
