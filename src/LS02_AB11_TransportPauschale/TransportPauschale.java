@@ -57,7 +57,7 @@ public class TransportPauschale {
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+      Scanner scanner = new Scanner(System.in);
         System.out.print("Geben Sie Warenwert ein: ");
         double ww = scanner.nextDouble();
         scanner.nextLine();
