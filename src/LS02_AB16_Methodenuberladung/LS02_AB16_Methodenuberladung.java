@@ -10,19 +10,20 @@ public class LS02_AB16_Methodenuberladung {
 
         if(wahl == 1){
             System.out.println("anfagns kapital: ");
-            double an = scanner.nextDouble();
+            double kapital = scanner.nextDouble();
             System.out.println("zinssatz: ");
-            double zi = scanner.nextDouble();
+            double interestRate = scanner.nextDouble();
             System.out.println("anzahl der tage: ");
-            double anTa = scanner.nextDouble();
-            berechnen(an, zi, anTa);
+            double days = scanner.nextDouble();
+            System.out.println(berechnen(kapital, interestRate, days));
+
         } else if (wahl == 2) {
             System.out.println("anfagns kapital: ");
             double an = scanner.nextDouble();
             System.out.println("zinssatz: ");
             double zi = scanner.nextDouble();
+            System.out.println(berechnen(an, zi));
 
-            berechnen(an, zi);
         } else if (wahl == 3) {
             System.out.print("Rate: ");
             double r = scanner.nextDouble();
@@ -31,7 +32,7 @@ public class LS02_AB16_Methodenuberladung {
             System.out.print("Jahre: ");
             int n = scanner.nextInt();
 
-            berechneZinsen(r, p, n, true);
+            System.out.println("Endkapital: " + berechneZinsen(r, p, n, true));
 
         } else {
             System.out.println("ungultige zahl");
@@ -41,16 +42,14 @@ public class LS02_AB16_Methodenuberladung {
 
 
     }
-    public static void berechnen(double a, double z, double t){
-        double zins = (a * z * t) / (100 * 360);
-        System.out.println(zins);
+    public static double berechnen(double kapital, double interestRate, double days){
+        return (kapital * interestRate *days) / (100 * 360);
     }
-    public static void berechnen(double a, double z){
-        double zins = a * z / 100;
-        System.out.println(zins);
+    public static double berechnen(double a, double z){
+        return a * z / 100;
     }
-    static void berechneZinsen(double r, double p, int n, boolean sparplan) {
-        double kn = r * (Math.pow(1 + p / 100, n) - 1) / (p / 100);
-        System.out.println("Endkapital: " + kn);
+    static double berechneZinsen(double r, double p, int n, boolean sparplan) {
+        return r * (Math.pow(1 + p / 100, n) - 1) / (p / 100);
+
     }
 }
