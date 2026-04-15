@@ -21,7 +21,6 @@ public class LS03_AB04_Umsatzanalyse_Hash_Map {
             int umsatz = scanner.nextInt();
             scanner.nextLine();
 
-
             umsatzbuch.put(stadt , umsatz);
         }
         for (String name: umsatzbuch.keySet()) {
