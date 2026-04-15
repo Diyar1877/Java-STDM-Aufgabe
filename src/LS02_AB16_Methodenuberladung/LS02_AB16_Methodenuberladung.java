@@ -31,7 +31,7 @@ public class LS02_AB16_Methodenuberladung {
             System.out.print("Jahre: ");
             int n = scanner.nextInt();
 
-            berechneZinsen(r, p, n, true);
+            berechneZinsen(r, p, n);
 
         } else {
             System.out.println("ungultige zahl");
@@ -49,7 +49,7 @@ public class LS02_AB16_Methodenuberladung {
         double zins = a * z / 100;
         System.out.println(zins);
     }
-    static void berechneZinsen(double r, double p, int n, boolean sparplan) {
+    static void berechneZinsen(double r, double p, int n) {
         double kn = r * (Math.pow(1 + p / 100, n) - 1) / (p / 100);
         System.out.println("Endkapital: " + kn);
     }
